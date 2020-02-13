@@ -1,6 +1,6 @@
 # Repositório para exercicios da aula de PW3
 
-## adicionando mysql
+## Adicionando mysql
 + Na barra de ferramentas vá em: View > Project Setup.
 + Clique em Change Base Image > Update Docker Configuration
 + Selecione DEFAULT + mysql
@@ -10,7 +10,7 @@
 + Crie um novo workspace com a URL do repositório onde voce salvou as atualizações.
 + MYSQL está instalado!
 
-## adicionado phpmyadmin
+## Adicionado phpmyadmin
 > No meu caso eu criei uma pasta public para poder usar o comando "apachectl start" sem problemas
 + Entre na pasta public pelo comando: cd public
 + Insira o comando no terminal: composer create-project phpmyadmin/phpmyadmin
@@ -22,3 +22,21 @@
 + Na url digite: /phpmyadmin
 + Nos campos de login digite root + a senha que voce inseriu pelo mysql.
 + Se tudo deu certo irá abrir o painel do phpmyadmin normalmente.
+
+## Adicionando laravel
+> Voce pode criar o projeto dentro ou fora da public
++ No terminal insira o comando: composer global require laravel/installer
++ Em seguida insira o comando: composer create-project --prefer-dist laravel/laravel {NOME DO SEU PROJETO}
+> Onde estão as chaves no comando acima substituia pelo nome do seu projeto SEM CHAVES.
++ Entre na pasta do seu projeto pelo comando "cd NomeDaPasta"
++ Digite php artisan serve
++ Verifique se o laravel está funcionando corretamente.
+
+## Vinculando o projeto laravel com um banco de dados
++ Dentro da pasta do seu projeto, abra o arquivo .env
++ Procure DB_CONNECTION e verifique se está definido pra mysql, se nao estiver,altere para mysql
++ Em DB_DATABASE coloque o nome do seu banco de dados
++ Em DB_PASSWORD insira a mesma senha que usou para acessar o phpmyadmin
++ Para verificar se está conectado ao DB, insira o comando: php artisan migrate
++ Se tudo estiver certo serão adicionadas algumas tabelas no seu banco de dados
++ Se der algum erro, verifique no phpmyadmin se o banco de dados está criado e se é o mesmo nome que voce colocou no arquivo .env
