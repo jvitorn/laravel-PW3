@@ -1,8 +1,8 @@
 # Repositório para exercicios da aula de PW3
 
-## Adicionando mysql
+## Adicionando mysql 
 + Na barra de ferramentas vá em: View > Project Setup.
-+ Clique em Change Base Image > Update Docker Configuration
++ Clique em Change Base Image > Update Docker Configuration.
 + Selecione DEFAULT + mysql
 + Clique em "Yes, generate..."
 + Salve as alterações no github
