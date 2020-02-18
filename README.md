@@ -13,16 +13,15 @@
 + MYSQL está instalado!
 
 ## Adicionado phpmyadmin
-> No meu caso eu criei uma pasta public para poder usar o comando "apachectl start" sem problemas
-+ Entre na pasta public pelo comando: cd public
 + Insira o comando no terminal: composer create-project phpmyadmin/phpmyadmin
 + Tome um café enquanto espera.
 + Abra o terminal do mysql (basta digitar mysql no terminal)
 + No terminal do mysql digitar : SET PASSWORD FOR root@localhost = PASSWORD('sua senha');
 + Aperte CTRL + Z para sair do terminal do mysql
-+ Para verificar se o phpmyadmin está funcionando corretamente, dê o comando: apachectl start
-+ Na url digite: /phpmyadmin
-+ Nos campos de login digite root + a senha que voce inseriu pelo mysql.
++ Para verificar se o phpmyadmin está funcionando corretamente, entre na pasta do phpmyadmin
++ insira o comando "php -S localhost:8080"
++ Abra o link da porta. 
++ Nos campos de login digite root e a senha que voce inseriu pelo mysql.
 + Se tudo deu certo irá abrir o painel do phpmyadmin normalmente.
 
 ## Adicionando laravel
